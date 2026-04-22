@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tahir Hussain — Creative Director</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Syncopate:wght@700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Cinematic Film Grain Overlay -->
+<div class="noise"></div>
 
 <!-- Custom Cursor -->
 <div class="cursor"></div>
@@ -44,7 +47,7 @@
                     <span class="char-wrap">CREATIVE</span>
                 </div>
                 <div class="line">
-                    <span class="char-wrap stroke-text">DIRECTOR</span>
+                    <span class="char-wrap stroke-text serif-accent">DIRECTOR</span>
                 </div>
             </h1>
             <p class="hero-subtitle fade-up">Crafting high-end digital experiences, visual identities, and interactive worlds.</p>
@@ -68,7 +71,7 @@
     <!-- Work Section -->
     <section class="work" id="work">
         <div class="container">
-            <h2 class="section-title fade-up">SELECTED <br><span class="stroke-text">PROJECTS</span></h2>
+            <h2 class="section-title fade-up">SELECTED <br><span class="stroke-text serif-accent">PROJECTS</span></h2>
             
             <div class="projects">
                 <!-- Project 1 -->
@@ -131,7 +134,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-text">
-                    <h2 class="section-title fade-up">THE <br><span class="stroke-text">VISION</span></h2>
+                    <h2 class="section-title fade-up">THE <br><span class="stroke-text serif-accent">VISION</span></h2>
                     <p class="fade-up delay-1">I am Tahir Hussain, an award-winning creative director specializing in immersive digital experiences and bold visual identities.</p>
                     <p class="fade-up delay-2">Merging aesthetic precision with cutting edge technology to build brands that refuse to be ignored.</p>
                     
@@ -152,7 +155,15 @@
                 </div>
                 <div class="about-visual">
                     <div class="about-circle magnetic">
-                        <span>TH</span>
+                        <svg class="spinning-text" viewBox="0 0 100 100" width="100%" height="100%">
+                            <defs>
+                                <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+                            </defs>
+                            <text>
+                                <textPath href="#circlePath" fill="#fff" startOffset="0%" font-size="10">TAHIR HUSSAIN &bull; CREATIVE DIRECTOR &bull; TAHIR HUSSAIN &bull; CREATIVE DIRECTOR &bull;</textPath>
+                            </text>
+                        </svg>
+                        <div class="about-circle-center">TH</div>
                     </div>
                 </div>
             </div>
@@ -162,7 +173,7 @@
     <!-- Dedicated Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <h2 class="section-title fade-up">GET IN <br><span class="stroke-text">TOUCH</span></h2>
+            <h2 class="section-title fade-up">GET IN <br><span class="stroke-text serif-accent">TOUCH</span></h2>
             
             <div class="contact-wrapper">
                 <div class="contact-info-panel fade-up">

@@ -230,9 +230,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // 5. GSAP SCROLL REVEALS & PARALLAX
     // ==================================================
     
-    // Project Images Clip Reveal & Parallax
+    // Project Clip Reveal, Parallax & Stacking
     const projects = document.querySelectorAll('.project-item');
-    projects.forEach(proj => {
+    projects.forEach((proj, i) => {
         const reveal = proj.querySelector('.image-reveal');
         const img = proj.querySelector('.project-image');
         
@@ -259,6 +259,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 scrub: true
             }
         });
+
+        // 3D Stacking Effect (skip the last project)
+        if (i !== projects.length - 1) {
+            gsap.to(proj, {
+                scale: 0.92,
+                opacity: 0.5,
+                filter: "blur(5px)",
+                scrollTrigger: {
+                    trigger: proj,
+                    start: "top 15%", // Triggers exactly as it becomes sticky
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+        }
     });
 
     // Counter Animations
