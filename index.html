@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahir Hussain — Creative Director</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- WebGL Background -->
+<canvas id="webgl-canvas"></canvas>
+
+<!-- Preloader -->
+<div class="preloader">
+    <div class="preloader-text">TAHIR HUSSAIN</div>
+    <div class="preloader-percent">0%</div>
+    <div class="preloader-bar"><div class="preloader-progress"></div></div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-logo magnetic">TH.</div>
+    <div class="nav-links">
+        <a href="#work" class="magnetic">Work</a>
+        <a href="#about" class="magnetic">About</a>
+        <a href="#contact" class="magnetic">Contact</a>
+    </div>
+</nav>
+
+<!-- Main Scroll Container -->
+<main class="main-container">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <div class="line">
+                    <span class="char-wrap">CREATIVE</span>
+                </div>
+                <div class="line">
+                    <span class="char-wrap stroke-text">DIRECTOR</span>
+                </div>
+            </h1>
+            <p class="hero-subtitle fade-up">Crafting high-end digital experiences, visual identities, and interactive worlds.</p>
+        </div>
+        <div class="scroll-indicator fade-up">
+            SCROLL TO EXPLORE
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee-container" id="marquee-1">
+            <div class="marquee-text">BRANDING &mdash; UI/UX &mdash; WEBGL &mdash; ART DIRECTION &mdash; BRANDING &mdash; UI/UX &mdash; WEBGL &mdash; ART DIRECTION &mdash;</div>
+        </div>
+        <div class="marquee-container" id="marquee-2">
+            <div class="marquee-text stroke-text">INTERACTIVE &mdash; MOTION &mdash; DESIGN &mdash; INTERACTIVE &mdash; MOTION &mdash; DESIGN &mdash; INTERACTIVE &mdash; MOTION &mdash; DESIGN &mdash;</div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <h2 class="section-title fade-up">SELECTED <br><span class="stroke-text">PROJECTS</span></h2>
+            
+            <div class="projects">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3>01</h3>
+                        <h2 class="magnetic">Visionaire</h2>
+                        <p>Editorial / Print</p>
+                    </div>
+                    <div class="project-image-wrap">
+                        <img src="assets/images/editorial-design.png" class="project-image" alt="Visionaire">
+                        <div class="image-reveal"></div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3>02</h3>
+                        <h2 class="magnetic">Luxe Noir</h2>
+                        <p>Brand Identity</p>
+                    </div>
+                    <div class="project-image-wrap">
+                        <img src="assets/images/brand-identity.png" class="project-image" alt="Luxe Noir">
+                        <div class="image-reveal"></div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3>03</h3>
+                        <h2 class="magnetic">FinFlow App</h2>
+                        <p>Digital / UI/UX</p>
+                    </div>
+                    <div class="project-image-wrap">
+                        <img src="assets/images/app-design.png" class="project-image" alt="FinFlow">
+                        <div class="image-reveal"></div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3>04</h3>
+                        <h2 class="magnetic">Aura Beauty</h2>
+                        <p>Packaging</p>
+                    </div>
+                    <div class="project-image-wrap">
+                        <img src="assets/images/packaging-design.png" class="project-image" alt="Aura Beauty">
+                        <div class="image-reveal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title fade-up">THE <br><span class="stroke-text">VISION</span></h2>
+                    <p class="fade-up delay-1">I am Tahir Hussain, an award-winning creative director specializing in immersive digital experiences and bold visual identities.</p>
+                    <p class="fade-up delay-2">Merging aesthetic precision with cutting edge technology to build brands that refuse to be ignored.</p>
+                    
+                    <div class="stats fade-up delay-3">
+                        <div class="stat">
+                            <h3 class="counter" data-target="50">0</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="counter" data-target="5">0</h3>
+                            <p>Years</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="counter" data-target="12">0</h3>
+                            <p>Awards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-circle magnetic">
+                        <span>TH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-up">GET IN <br><span class="stroke-text">TOUCH</span></h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-panel fade-up">
+                    <p class="contact-desc">Ready to craft a new digital experience or visual identity? Let's discuss your next massive project.</p>
+                    
+                    <div class="contact-block">
+                        <h5>Email Address</h5>
+                        <a href="mailto:tahirhussain66678@gmail.com" class="magnetic hover-underline">tahirhussain66678@gmail.com</a>
+                    </div>
+                    <div class="contact-block">
+                        <h5>Direct Line</h5>
+                        <a href="tel:+923027999986" class="magnetic hover-underline">+92 302 7999986</a>
+                    </div>
+                    <div class="contact-block">
+                        <h5>Location</h5>
+                        <p>Pakistan &bull; Remote</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel fade-up delay-1">
+                    <form class="contact-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Email</label>
+                            <input type="email" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Project Details</label>
+                            <textarea placeholder="Tell me about your goals..." rows="4" required></textarea>
+                        </div>
+                        <button class="submit-btn magnetic" type="submit">SEND INQUIRY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom fade-up">
+            <p>&copy; 2026 Tahir Hussain. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" class="magnetic">Instagram</a>
+                <a href="#" class="magnetic">Twitter</a>
+                <a href="#" class="magnetic">Behance</a>
+            </div>
+        </div>
+    </footer>
+
+</main>
+
+<!-- Reliable CDN Links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
